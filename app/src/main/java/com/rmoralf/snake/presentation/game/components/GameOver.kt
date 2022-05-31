@@ -38,6 +38,14 @@ fun GameOver(
                     .padding(bottom = 20.dp)
             )
 
+            Text(
+                text = "Your score: ${viewModel.scoreState.value}",
+                color = Black,
+                fontSize = 20.sp,
+                modifier = Modifier
+                    .padding(bottom = 20.dp)
+            )
+
             Button(modifier = Modifier.padding(top = 30.dp),
                 onClick = {
                     viewModel.resetGame()
@@ -46,8 +54,8 @@ fun GameOver(
             }
 
             Button(onClick = {
-                    navController.popBackStack()
-                }) {
+                navController.popBackStack()
+            }) {
                 Text(text = "Exit")
             }
         }

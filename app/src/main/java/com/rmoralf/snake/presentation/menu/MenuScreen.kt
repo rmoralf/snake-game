@@ -53,6 +53,7 @@ fun MenuScreen(
             }) {
                 Text(text = "Version 2")
             }
+
         }
     }
 }
